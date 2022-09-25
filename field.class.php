@@ -59,10 +59,11 @@ class profile_field_dependencymenu extends profile_field_base {
      *
      * @param int $fieldid
      * @param int $userid
+     * @param int $fieldadd
      */
-    public function __construct($fieldid = 0, $userid = 0) {
+    public function __construct($fieldid = 0, $userid = 0, $fieldadd=0) {
         // First call parent constructor.
-        parent::__construct($fieldid, $userid);
+        parent::__construct($fieldid, $userid, $fieldadd);
         // Only if we actually need data.
         if ($fieldid !== 0 && $userid !== 0) {
             $mykey = $fieldid . ',' . $userid; // It will always work because they are number, so no chance of ambiguity.
@@ -139,8 +140,8 @@ class profile_field_dependencymenu extends profile_field_base {
      *
      * @deprecated since Moodle 3.1
      */
-    public function profile_field_dependencymenu($fieldid = 0, $userid = 0) {
-        self::__construct($fieldid, $userid);
+    public function profile_field_dependencymenu($fieldid = 0, $userid = 0, $fieldadd=0) {
+        self::__construct($fieldid, $userid, $fieldadd);
     }
 
     /**
