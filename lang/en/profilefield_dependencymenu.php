@@ -18,7 +18,7 @@
  * Strings for component 'profilefield_dependencymenu', language 'en'
  *
  * @package   profilefield_dependencymenu
- * @copyright 2016 onwards Antonello Moro  {@link http://treagles.it}
+ * @copyright 2022 - Prihantoosa {@link https://digitos.id}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
